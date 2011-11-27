@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Ruby katas}
   s.description = %q{TODO: Write a gem description}
+  s.license     = "Apache 2.0"
 
   s.rubyforge_project = "ruby_katas"
 
