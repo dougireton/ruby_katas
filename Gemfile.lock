@@ -3,6 +3,7 @@ PATH
   specs:
     ruby_katas (0.0.1)
       rspec (~> 2.8.0)
+      yard
 
 GEM
   remote: http://rubygems.org/
@@ -16,6 +17,7 @@ GEM
     rspec-expectations (2.8.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.8.0)
+    yard (0.7.4)
 
 PLATFORMS
   ruby
