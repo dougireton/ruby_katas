@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   s.add_runtime_dependency "rspec", "~> 2.8.0"
-  s.add_runtime_dependency "yard"
+  s.add_runtime_dependency "rocco"
+  s.add_runtime_dependency "redcarpet", "~> 1.7.0"
 end
