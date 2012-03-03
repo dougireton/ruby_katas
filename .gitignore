@@ -2,5 +2,5 @@
 .bundle
 pkg/*
 .rvmrc
-doc/*
+docs/*
 .yardoc/*
