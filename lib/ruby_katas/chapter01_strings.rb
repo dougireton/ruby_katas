@@ -1,41 +1,45 @@
+# <small>
 # Copyright 2011 Doug Ireton
-
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
-
-#     http://www.apache.org/licenses/LICENSE-2.0
-
+#
+# <http://www.apache.org/licenses/LICENSE-2.0>
+#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+# </small>
 
-# Chapter 1
+## Chapter 1
+# Explain chapter 1 here
+# More explanation...
 module Chapter01
 
   class << self
-    # 'Hello, world!' in Ruby
-    #
-    # @return [String] 'Hello, world!'
+    #### 'Hello, world!' in Ruby
     def hello_world
 
-      # Change the double umnderscore so this method returns 'Hello, world!'
+      # Change the double underscore so this method returns `'Hello, world!'`
       return 'Hello, __'
     end
 
 
-    # Hello, name
+    #### Hello, name
     #
-    # @param [String] name 
+    # @param [String] name
     #   name of the person you want to say hello to
     #
     # @return [String] 'Hello name'
     #
-    # @example
+    # @example 
+    #   `
     #   hello_name('Bob')
     #   #=> 'Hello Bob'
+    #   `
     def hello_name(name)
 
       # Replace the blank space between the braces, with the method parameter 'name'
@@ -44,28 +48,28 @@ module Chapter01
     end
 
 
-    #Reverse a string
+    #### Reverse a string
     #
     # @param [String] string you want reversed
     # @return [String] the string reversed
     def string_reverse(string)
 
-      # see http://ruby-doc.org/core-1.9.3/String.html#method-i-reverse
+      # see [Ruby's String#reverse method](http://ruby-doc.org/core-1.9.3/String.html#method-i-reverse)
     end
 
 
-    # Multiply a string
+    #### Multiply a string
     #
     # @param [String] string to multiply
     # @param [integer] n multiply string by this number
     # @return [String] a new string with n copies of the string concatenated together
     def string_multiply(string, n)
 
-      # see http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A
+      # see [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A)
     end
 
 
-    # Downcase and hyphenate a string
+    #### Downcase and hyphenate a string
     #
     # @param [String] string string to hyphenate
     # @return [String] a new hyphenated string
@@ -81,8 +85,9 @@ module Chapter01
       # You will need to use several methods in Ruby's String class
       # to accomplish your goal. See http://www.ruby-doc.org/core-1.9.3/String.html
       # You will need to do the following:
-      # Strip leading and trailing whitespace
-      # Replace multiple spaces in the middle of a string with
+      #
+      # 1. Strip leading and trailing whitespace
+      # 2. Replace multiple spaces in the middle of a string with
       # a single hyphen
       #
       # You can do it all on one line by chaining methods together
@@ -93,13 +98,14 @@ module Chapter01
 end
 
 
-# Open the Ruby built-in String class and add the hyphenate method
+#### Opening a built-in Class
+# Open Ruby's built-in String class and add the hyphenate method
 # Since Ruby has open classes, you can add methods even to built-in classes
 #
 class String
 
-  # @param [String] string to hyphenzate
-  # @return [String] a new hyphenated string
+  #@param [String] string to hyphenate
+  #@return [String] a new hyphenated string
   def hyphenate
 
     # Notice that the hyphenate method doesn't use any parameters
@@ -114,29 +120,31 @@ class String
 end
 
 
+### RSpec Tests
 describe Chapter01 do
 
+  #### Hello World
   describe '.hello_world' do
     it "retuns 'Hello, world!'" do
       Chapter01.hello_world.should eq('Hello, world!')
     end
   end
 
-
+  #### Hello, name
   describe '.hello_name' do
     it "says 'Hello <name>'" do
       Chapter01.hello_name('Doug').should eq('Hello Doug')
     end
   end
 
-
+  #### Reverse a string
   describe '.string_reverse' do
     it 'reverses a string' do
       Chapter01.string_reverse('stressed').should eq('desserts')
     end
   end
 
-
+  #### Multiply a string
   describe '.string_multiply' do
     it 'returns a new string with n copies concatenated together' do
       Chapter01.string_multiply('A', 5).should eq('AAAAA')
@@ -155,7 +163,7 @@ describe Chapter01 do
     end
   end
 
-
+  #### Hyphenate and downcase a string
   describe '.hyphenate' do
 
     it 'hyphenates and downcases a string' do
@@ -177,9 +185,10 @@ describe Chapter01 do
 end
 
 
-
+### Test Ruby's built-in String class
 describe String do
 
+  #### Test our added hyphenate method
   describe '#hyphenate' do
 
     it 'hyphenates and downcases a string' do
