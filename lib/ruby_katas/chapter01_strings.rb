@@ -15,35 +15,45 @@
 # </small>
 
 ## Chapter 1
-# Explain chapter 1 here
-# More explanation...
+# "Hello, world!" is the classic first programming exercise for most
+# programming books so we'll start there in this chapter.
+#
+# `hello_world` is a Ruby _method_. In an object-oriented language like Ruby,
+# _methods_ are the language's verbs. They do things, like print a file, or 
+# multiply two numbers, or move your spaceship.
+#
+# In this case, `hello_world` is a method which should return the _String_
+# "Hello, world!"
+#
 module Chapter01
 
   class << self
+
     #### 'Hello, world!' in Ruby
+    # Returns the String "Hello, world!"
     def hello_world
 
-      # Change the double underscore so this method returns `'Hello, world!'`
+      ##### To-do:
+      # > Change the double underscore so this method returns `'Hello, world!'`
       return 'Hello, __'
     end
 
 
     #### Hello, name
     #
-    # @param [String] name
-    #   name of the person you want to say hello to
+    # name - The name of the person you want to say hello to as a String.
     #
-    # @return [String] 'Hello name'
+    # Examples
     #
-    # @example 
-    #   `
-    #   hello_name('Bob')
-    #   #=> 'Hello Bob'
-    #   `
+    #     hello_name('Bob')
+    #     #=> 'Hello Bob'
+    #
+    # Returns the String "Hello _name_".
     def hello_name(name)
 
-      # Replace the blank space between the braces, with the method parameter 'name'
-      # Ruby has string interpolation, as in other languages
+      ##### To-do:
+      # > Replace the blank space between the braces, with the method parameter
+      # `name`. Ruby has string interpolation, as in other languages.
       return "Hello #{ }"
     end
 
