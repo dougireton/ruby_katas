@@ -14,7 +14,7 @@
 # limitations under the License.
 # </small>
 
-## Chapter 1
+## Chapter One
 # "Hello, world!" is the classic first programming exercise for most
 # programming books so we'll start there in this chapter.
 #
@@ -30,6 +30,12 @@ module Chapter01
   class << self
 
     #### 'Hello, world!' in Ruby
+    #
+    # Examples
+    #
+    #     hello_world
+    #     # => 'Hello, world!'
+    #
     # Returns the String "Hello, world!"
     def hello_world
 
@@ -41,12 +47,12 @@ module Chapter01
 
     #### Hello, name
     #
-    # name - The name of the person you want to say hello to as a String.
+    # `name` - The name of the person you want to say hello to as a String.
     #
     # Examples
     #
     #     hello_name('Bob')
-    #     #=> 'Hello Bob'
+    #     # => 'Hello Bob'
     #
     # Returns the String "Hello _name_".
     def hello_name(name)
@@ -60,11 +66,19 @@ module Chapter01
 
     #### Reverse a string
     #
-    # @param [String] string you want reversed
-    # @return [String] the string reversed
+    # `string` - String you want reversed
+    #
+    # Examples
+    #
+    #     string_reverse('stressed')
+    #     # => 'desserts'
+    #
+    # Returns the String reversed
     def string_reverse(string)
 
-      # see [Ruby's String#reverse method](http://ruby-doc.org/core-1.9.3/String.html#method-i-reverse)
+      ##### To-do:
+      # > Reverse `string` using Ruby's built-in [String#reverse][] method
+      # [String#reverse]: http://ruby-doc.org/core-1.9.3/String.html#method-i-reverse
     end
 
 
@@ -195,10 +209,10 @@ describe Chapter01 do
 end
 
 
-### Test Ruby's built-in String class
+#### Test Ruby's built-in String class
 describe String do
 
-  #### Test our added hyphenate method
+  ##### Test our added hyphenate method
   describe '#hyphenate' do
 
     it 'hyphenates and downcases a string' do
