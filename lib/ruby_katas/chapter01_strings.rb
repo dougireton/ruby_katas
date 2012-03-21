@@ -137,10 +137,17 @@ end
 #
 class String
 
-  #@param [String] string to hyphenate
-  #@return [String] a new hyphenated string
+  # self - string to hyphenate
+  #
+  # Examples
+  #
+  #   'My string'.hyphenate
+  #     # => 'my-string'
+  #
+  # Returns a new hyphenated string
   def hyphenate
 
+    # TODO:
     # Notice that the hyphenate method doesn't use any parameters
     # The string you are trying to hyphenate will be passed as "self"
     # Therefore, instead of string_to_hyphenate.foo.bar(' ').baz,
