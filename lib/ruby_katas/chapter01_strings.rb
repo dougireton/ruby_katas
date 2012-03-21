@@ -84,12 +84,16 @@ module Chapter01
 
     #### Multiply a string
     #
-    # @param [String] string to multiply
-    # @param [integer] n multiply string by this number
-    # @return [String] a new string with n copies of the string concatenated together
+    # `string` - string to multiply  
+    # `n` - multiply string by this number
+    #
+    # Returns a new string with `n` copies of the string concatenated together
     def string_multiply(string, n)
 
-      # see [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A)
+      ##### To-do:
+      # > Use [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A),
+      # to complete this method.
+
     end
 
 
