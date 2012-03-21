@@ -1,5 +1,4 @@
-# <small>
-# Copyright 2011 Doug Ireton
+# Copyright 2012 Doug Ireton
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +11,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# </small>
 
 ## Chapter One
 # "Hello, world!" is the classic first programming exercise for most
 # programming books so we'll start there in this chapter.
 #
 # `hello_world` is a Ruby _method_. In an object-oriented language like Ruby,
-# _methods_ are the language's verbs. They do things, like print a file, or 
+# _methods_ are the language's verbs. They do things, like print a file, or
 # multiply two numbers, or move your spaceship.
 #
 # In this case, `hello_world` is a method which should return the _String_
@@ -29,7 +27,7 @@ module Chapter01
 
   class << self
 
-    #### 'Hello, world!' in Ruby
+    # 'Hello, world!' in Ruby
     #
     # Examples
     #
@@ -39,15 +37,15 @@ module Chapter01
     # Returns the String "Hello, world!"
     def hello_world
 
-      ##### To-do:
-      # > Change the double underscore so this method returns `'Hello, world!'`
+      # TODO:
+      # Change the double underscore so this method returns 'Hello, world!'
       return 'Hello, __'
     end
 
 
-    #### Hello, name
+    # Hello, name
     #
-    # `name` - The name of the person you want to say hello to as a String.
+    # name - The name of the person you want to say hello to as a String.
     #
     # Examples
     #
@@ -57,16 +55,16 @@ module Chapter01
     # Returns the String "Hello _name_".
     def hello_name(name)
 
-      ##### To-do:
-      # > Replace the blank space between the braces, with the method parameter
+      # TODO:
+      # Replace the blank space between the braces, with the method parameter
       # `name`. Ruby has string interpolation, as in other languages.
       return "Hello #{ }"
     end
 
 
-    #### Reverse a string
+    # Reverse a string
     #
-    # `string` - String you want reversed
+    # string - String you want reversed
     #
     # Examples
     #
@@ -76,40 +74,47 @@ module Chapter01
     # Returns the String reversed
     def string_reverse(string)
 
-      ##### To-do:
-      # > Reverse `string` using Ruby's built-in [String#reverse][] method
+      # TODO:
+      # Reverse `string` using Ruby's built-in [String#reverse][] method
       # [String#reverse]: http://ruby-doc.org/core-1.9.3/String.html#method-i-reverse
     end
 
 
-    #### Multiply a string
+    # Multiply a string
     #
-    # `string` - string to multiply  
-    # `n` - multiply string by this number
+    # string - string to multiply
+    # n - multiply string by this number
+    #
+    # Examples
+    #
+    #   string_multiply("foo", 3)
+    #     # => 'foofoofoo'
     #
     # Returns a new string with `n` copies of the string concatenated together
     def string_multiply(string, n)
 
-      ##### To-do:
-      # > Use [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A),
+      # TODO:
+      # Use [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A),
       # to complete this method.
 
     end
 
 
-    #### Downcase and hyphenate a string
+    # Downcase and hyphenate a string
     #
-    # @param [String] string string to hyphenate
-    # @return [String] a new hyphenated string
+    # string_to_hyphenate -  string to downcase and hyphenate
     #
-    # @see http://rubydoc.info/gems/activesupport/3.1.3/ActiveSupport/Inflector:parameterize
-    #   A more complete implementation, called parameterize, in Rails ActiveSupport
+    # For a more complete implementation, see
+    # [Rails' ActiveSupport Parameterize method](http://rubydoc.info/gems/activesupport/3.1.3/ActiveSupport/Inflector:parameterize)
     #
-    # @example
+    # Example
     #   hyphenate('  My dog has   fleas  ')
     #   #=> 'my-dog-has-fleas'
+    #
+    # Returns a new hyphenated string
     def hyphenate(string_to_hyphenate)
 
+      # TODO:
       # You will need to use several methods in Ruby's String class
       # to accomplish your goal. See http://www.ruby-doc.org/core-1.9.3/String.html
       # You will need to do the following:
