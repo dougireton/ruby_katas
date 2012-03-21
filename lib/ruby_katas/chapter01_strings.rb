@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-## Chapter One
+
+# Chapter One
 # "Hello, world!" is the classic first programming exercise for most
 # programming books so we'll start there in this chapter.
 #
@@ -22,7 +23,6 @@
 #
 # In this case, `hello_world` is a method which should return the _String_
 # "Hello, world!"
-#
 module Chapter01
 
   class << self
@@ -52,7 +52,7 @@ module Chapter01
     #     hello_name('Bob')
     #     # => 'Hello Bob'
     #
-    # Returns the String "Hello _name_".
+    # Returns the String "Hello `name`".
     def hello_name(name)
 
       # TODO:
@@ -131,10 +131,9 @@ module Chapter01
 end
 
 
-#### Opening a built-in Class
+# Opening a built-in Class
 # Open Ruby's built-in String class and add the hyphenate method
 # Since Ruby has open classes, you can add methods even to built-in classes
-#
 class String
 
   # self - string to hyphenate
@@ -160,31 +159,31 @@ class String
 end
 
 
-### RSpec Tests
+# RSpec Tests
 describe Chapter01 do
 
-  #### Hello World
+  # Hello World
   describe '.hello_world' do
     it "retuns 'Hello, world!'" do
       Chapter01.hello_world.should eq('Hello, world!')
     end
   end
 
-  #### Hello, name
+  # Hello, name
   describe '.hello_name' do
     it "says 'Hello <name>'" do
       Chapter01.hello_name('Doug').should eq('Hello Doug')
     end
   end
 
-  #### Reverse a string
+  # Reverse a string
   describe '.string_reverse' do
     it 'reverses a string' do
       Chapter01.string_reverse('stressed').should eq('desserts')
     end
   end
 
-  #### Multiply a string
+  # Multiply a string
   describe '.string_multiply' do
     it 'returns a new string with n copies concatenated together' do
       Chapter01.string_multiply('A', 5).should eq('AAAAA')
@@ -203,7 +202,7 @@ describe Chapter01 do
     end
   end
 
-  #### Hyphenate and downcase a string
+  # Hyphenate and downcase a string
   describe '.hyphenate' do
 
     it 'hyphenates and downcases a string' do
@@ -225,10 +224,10 @@ describe Chapter01 do
 end
 
 
-#### Test Ruby's built-in String class
+# Test Ruby's built-in String class
 describe String do
 
-  ##### Test our added hyphenate method
+  # Test our added hyphenate method
   describe '#hyphenate' do
 
     it 'hyphenates and downcases a string' do
