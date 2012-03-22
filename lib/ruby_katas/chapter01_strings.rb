@@ -37,8 +37,7 @@ module Chapter01
     # Returns the String "Hello, world!"
     def hello_world
 
-      # TODO:
-      # Change the double underscore so this method returns 'Hello, world!'
+      # TODO: Change the double underscore so this method returns 'Hello, world!'
       return 'Hello, __'
     end
 
@@ -55,8 +54,7 @@ module Chapter01
     # Returns the String "Hello `name`".
     def hello_name(name)
 
-      # TODO:
-      # Replace the blank space between the braces, with the method parameter
+      # TODO: Replace the blank space between the braces, with the method parameter
       # `name`. Ruby has string interpolation, as in other languages.
       return "Hello #{ }"
     end
@@ -74,8 +72,7 @@ module Chapter01
     # Returns the String reversed
     def string_reverse(string)
 
-      # TODO:
-      # Reverse `string` using Ruby's built-in [String#reverse][] method
+      # TODO: Reverse `string` using Ruby's built-in [String#reverse][] method
       # [String#reverse]: http://ruby-doc.org/core-1.9.3/String.html#method-i-reverse
     end
 
@@ -93,8 +90,7 @@ module Chapter01
     # Returns a new string with `n` copies of the string concatenated together
     def string_multiply(string, n)
 
-      # TODO:
-      # Use [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A),
+      # TODO: Use [Ruby's String#Copy method](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-2A),
       # to complete this method.
 
     end
@@ -102,7 +98,7 @@ module Chapter01
 
     # Downcase and hyphenate a string
     #
-    # string_to_hyphenate -  string to downcase and hyphenate
+    # string_to_hyphenate - string to downcase and hyphenate
     #
     # For a more complete implementation, see
     # [Rails' ActiveSupport Parameterize method](http://rubydoc.info/gems/activesupport/3.1.3/ActiveSupport/Inflector:parameterize)
@@ -114,8 +110,7 @@ module Chapter01
     # Returns a new hyphenated string
     def hyphenate(string_to_hyphenate)
 
-      # TODO:
-      # You will need to use several methods in Ruby's String class
+      # TODO: You will need to use several methods in Ruby's String class
       # to accomplish your goal. See http://www.ruby-doc.org/core-1.9.3/String.html
       # You will need to do the following:
       #
@@ -146,13 +141,12 @@ class String
   # Returns a new hyphenated string
   def hyphenate
 
-    # TODO:
-    # Notice that the hyphenate method doesn't use any parameters
+    # TODO: Notice that the hyphenate method doesn't use any parameters
     # The string you are trying to hyphenate will be passed as "self"
     # Therefore, instead of string_to_hyphenate.foo.bar(' ').baz,
     # you would type this: self.foo.bar(' ').baz
     #
-    # Then you would call your custom String instance method like this:
+    # Then you can call your custom String instance method like this:
     # 'My string'.hyphenate
 
   end

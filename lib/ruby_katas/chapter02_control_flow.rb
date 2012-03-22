@@ -33,7 +33,7 @@ module Chapter02
     #
     def simple_if(n)
 
-      # use a simple "if ... end" structure here
+      # TODO: use a simple "if ... end" structure here
       # if n == 1, return n
 
     end
@@ -50,7 +50,7 @@ module Chapter02
     #     Description of modulo (%) operator
     def odd_even(n)
 
-      # Insert if...else...end here to test if n is even or odd
+      # TODO: Insert if...else...end here to test if n is even or odd
 
     end
 
@@ -71,13 +71,13 @@ module Chapter02
     #   Description of if/elsif/else expression
     def recommend_beer(style)
 
-      # Insert if...elsif...else...end here to return the correct type of beer
+      # TODO: Insert if...elsif...else...end here to return the correct type of beer
     end
 
 
     # Learn how to use Ruby's Case statement
     #
-    # The recommend_beer method might be better written using a Case statement instead of a 
+    # The recommend_beer method might be better written using a Case statement instead of a
     # big if/elsif/else statement.
     # Rewrite it using Ruby's Case statement
     #
@@ -95,7 +95,7 @@ module Chapter02
     #   Description of Ruby Case expression
     def recommend_beer2(style)
 
-      # Insert case statement here to return the correct type of beer
+      # TODO: Insert case statement here to return the correct type of beer
       # Use the "more concise syntax" from the link above
       case style
         when "amber" then "__"
