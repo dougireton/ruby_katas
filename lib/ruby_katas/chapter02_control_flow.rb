@@ -20,17 +20,17 @@
 module Chapter02
 
   class << self
-    ##
+
     # A kata to learn how to use simple "if" statements
     #
-    # @param [Fixnum] n number to evaluate
-    # @return [Fixnum, NilClass] 1 if n == 1.
-    #   If you don't explicitly return a value in a method, it will return nil.
+    # In Ruby, the "then" statement isn't usually used, so just "if", not "if ... then"
+    # Also, notice that parenthesis around the condition, e.g. "n == 1" are optional
+    # and usually omitted in Ruby
     #
-    # @note In Ruby, the "then" statement isn't usually used, so just "if", not "if ... then"
-    #   Also, notice that parenthesis around the condition, e.g. "n == 1" are optional
-    #   and usually omitted in Ruby
+    # n - The Integer number to evaluate
     #
+    # Returns 1 if n == 1.
+    # If you don't explicitly return a value in a method, it will return nil.
     def simple_if(n)
 
       # TODO: use a simple "if ... end" structure here
