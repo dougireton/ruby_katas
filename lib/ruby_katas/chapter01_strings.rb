@@ -159,32 +159,32 @@ describe Chapter01 do
   # Hello World
   describe '.hello_world' do
     it "retuns 'Hello, world!'" do
-      Chapter01.hello_world.should eq('Hello, world!')
+      expect(Chapter01.hello_world).to eq('Hello, world!')
     end
   end
 
   # Hello, name
   describe '.hello_name' do
     it "says 'Hello <name>'" do
-      Chapter01.hello_name('Doug').should eq('Hello Doug')
+      expect(Chapter01.hello_name('Doug')).to eq('Hello Doug')
     end
   end
 
   # Reverse a string
   describe '.string_reverse' do
     it 'reverses a string' do
-      Chapter01.string_reverse('stressed').should eq('desserts')
+      expect(Chapter01.string_reverse('stressed')).to eq('desserts')
     end
   end
 
   # Multiply a string
   describe '.string_multiply' do
     it 'returns a new string with n copies concatenated together' do
-      Chapter01.string_multiply('A', 5).should eq('AAAAA')
+      expect(Chapter01.string_multiply('A', 5)).to eq('AAAAA')
     end
 
     it 'returns an empty string when n == 0' do
-      Chapter01.string_multiply('A', 0).should eq('')
+      expect(Chapter01.string_multiply('A', 0)).to eq('')
     end
 
     it 'throws an ArgumentError when n < 0' do
@@ -200,19 +200,19 @@ describe Chapter01 do
   describe '.hyphenate' do
 
     it 'hyphenates and downcases a string' do
-      Chapter01.hyphenate('  My dog has   fleas  ').should eq('my-dog-has-fleas')
+      expect(Chapter01.hyphenate('  My dog has   fleas  ')).to eq('my-dog-has-fleas')
     end
 
     it "doesn't hyphenate single words" do
-      Chapter01.hyphenate('single').should eq('single')
+      expect(Chapter01.hyphenate('single')).to eq('single')
     end
 
     it "doesn't hyphenate single words with whitespace" do
-      Chapter01.hyphenate('  single ').should eq('single')
+      (Chapter01.hyphenate('  single ')).to eq('single')
     end
 
     it 'returns an empty string if you pass in a string containing only spaces' do
-      Chapter01.hyphenate('   ').should eq('')
+      expect(Chapter01.hyphenate('   ')).to eq('')
     end
   end
 end
@@ -225,19 +225,19 @@ describe String do
   describe '#hyphenate' do
 
     it 'hyphenates and downcases a string' do
-      '  My dog has   fleas  '.hyphenate.should eq('my-dog-has-fleas')
+      expect('  My dog has   fleas  '.hyphenate).to eq('my-dog-has-fleas')
     end
 
     it "doesn't hyphenate single words" do
-      'single'.hyphenate.should eq('single')
+      expect('single'.hyphenate).to eq('single')
     end
 
     it "doesn't hyphenate single words with whitespace" do
-      '  single '.hyphenate.should eq('single')
+      expect('  single '.hyphenate).to eq('single')
     end
 
     it 'returns an empty string if you pass in a string containing only spaces' do
-      '   '.hyphenate.should eq('')
+      expect('   '.hyphenate).to eq('')
     end
   end
 end
