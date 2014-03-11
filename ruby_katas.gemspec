@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["dougireton@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Ruby katas}
-  s.description = %q{TODO: Write a gem description}
+  s.description = %q{Practice Ruby by completing small katas TDD-style}
   s.license     = "Apache 2.0"
 
   s.rubyforge_project = "ruby_katas"
